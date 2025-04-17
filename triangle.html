@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .center-box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .triangle1 {
+            width: 0;
+            height: 0;
+            border-width: 100px;
+            border-color:  transparent transparent blue;
+            border-style: solid;
+        }
+        .triangle2{
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        .triangle3{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center-box"></div>
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <div class="triangle3">▲</div>
+    </div>
+</body>
+</html>
